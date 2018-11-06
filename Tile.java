@@ -42,4 +42,13 @@ public class Tile extends Pane{
     public int getY(){
         return this.yVal;
     }
+    public void setColor(boolean player){
+        if(player == true){
+            rect.setFill(Color.RED);
+        }
+        else{
+            rect.setFill(Color.BLUE);
+        }
+    }
+    
 }

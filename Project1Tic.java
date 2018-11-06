@@ -12,7 +12,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import java.util.ArrayList;
+
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 
@@ -23,17 +24,23 @@ import javafx.scene.shape.Rectangle;
 public class Project1Tic extends Application {
     
     
+    
+    
     @Override
     public void start(Stage primaryStage) {
+          
+        
+        
+        
+        
         GridPane grid = new GridPane();
         
         
         
-        ArrayList<SmallBoard> boardArray = new ArrayList<>();
+        
         for (int i = 0;i<3;i++){
             for(int j = 0;j<3;j++){
-                SmallBoard sb = new SmallBoard(i,j);
-                boardArray.add(sb);
+                SmallBoard sb = new SmallBoard(i,j);              
                 grid.add(sb, i, j);
             }
     
